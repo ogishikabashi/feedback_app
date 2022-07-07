@@ -6,6 +6,8 @@ import {useState} from 'react'
 function FeedbackForm() {
 
     const [text, setText] = useState('')
+    const [btnDisabled, setBtnDisabled] = useState(true)
+    const [message, setMessage] = useState('')
     
     
 
@@ -23,11 +25,12 @@ function FeedbackForm() {
                 placeholder='Write a review' 
                 value={text} />
 
-                <Button type="submit">Send</Button>
+                <Button type="submit" isDisabled={btnDisabled}>Send</Button>
 
 
                 
             </div>
+            {message && <div className='message'>{message}</div>}
         </form>
     </Card>
   )
