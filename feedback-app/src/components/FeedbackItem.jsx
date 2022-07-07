@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Card from './shared/Card'
 import {FaTimes} from 'react-icons/fa'
-import { identity } from 'lodash'
+// import { identity } from 'lodash'
 
 function FeedbackItem({item, handleDelete}) {
     
