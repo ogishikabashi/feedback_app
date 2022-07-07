@@ -12,8 +12,19 @@ function FeedbackForm() {
     
 
     const handleTextChange = (e) => {
+        if(text === '') {
+            setBtnDisabled(true)
+            setMessage(null)
+        }else if(text !== '' && text.trim().length <= 10) {
+            setMessage('Text must be atleast 10 Characters')
+            setBtnDisabled(true)
+        } else{
+            setMessage(null)
+            setBtnDisabled(false)
+        }
         setText(e.target.value)
     }
+    
   return (
     <Card>
         <form>
