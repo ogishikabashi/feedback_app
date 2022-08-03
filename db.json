@@ -6,14 +6,9 @@
       "text": "this is test 1"
     },
     {
-      "id": 2,
-      "rating": 9,
-      "text": "this is test 2"
-    },
-    {
-      "id": 3,
-      "rating": 4,
-      "text": "this is test 3"
+      "text": "this is another",
+      "rating": 10,
+      "id": 2
     }
   ]
 }

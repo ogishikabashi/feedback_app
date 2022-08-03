@@ -1,2 +1,12 @@
 {
-}
+    "prettier.semi":false,
+    "prettier.singleQuote": true,
+    
+        "emmet.includeLanguages": {
+            "javascript":"javascriptreact",
+            "vue-html": "html",
+            "vue": "html"
+        
+    }
+}      
+         
